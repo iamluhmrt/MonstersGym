@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
 :root {
   --primary-color: #f92524;
@@ -33,7 +33,7 @@
 
 .section__header::after {
   position: absolute;
-  content: "";
+  content: '';
   left: 0;
   bottom: 0;
   width: 50px;
@@ -79,7 +79,7 @@ body {
 }
 
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 .header {
@@ -158,7 +158,8 @@ nav {
 
 .header__image img {
   max-width: 500px;
-  margin: auto;
+  margin-bottom: -50px;
+  transform: scaleX(-1);
 }
 
 .header__content h4 {
@@ -304,6 +305,8 @@ nav {
 .trainer__card img {
   height: 100%;
   object-fit: cover;
+  object-position: top;
+  height: 389px;
 }
 
 .trainer__content {
@@ -453,7 +456,9 @@ nav {
 
 .footer__container {
   display: grid;
+  grid-template-columns: 2fr 1fr;
   gap: 2rem;
+  align-items: center;
 }
 
 .footer__logo a {
@@ -467,12 +472,20 @@ nav {
 }
 
 .footer__logo img {
-  max-width: 40px;
+  width: 100%;
+  max-width: 350px;
+  height: 250px;
 }
 
 .footer__col p {
   margin-bottom: 2rem;
   color: var(--text-light);
+}
+
+.footer_column {
+  display: flex;
+  gap: 3rem;
+  /* justify-content: center; */
 }
 
 .footer__socials {
@@ -613,17 +626,7 @@ nav {
   .price__grid {
     grid-template-columns: repeat(3, 1fr);
   }
-
-  .footer__container {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .footer__col:first-child {
-    grid-column: 1/3;
-  }
 }
-
-
 
 @media (width < 768px) {
   .nav__header {
@@ -634,16 +637,29 @@ nav {
     align-items: center;
     justify-content: space-between;
     background-color: var(--secondary-color);
-
   }
 
-  .nav__logo{
+  .footer__col {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer__col:first-child {
+    grid-column: 1/3;
+  }
+
+  .nav__logo {
     max-width: 130px;
   }
 }
+.header__image img {
+  max-width: 500px;
+  margin-bottom: -55px;
+}
 
-
-
+.header__content {
+  margin-top: 20px;
+}
 
 @media (width > 1024px) {
   .class__grid {
