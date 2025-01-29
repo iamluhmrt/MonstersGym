@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
+body {
+  background-color: var(--secondary-color) !important;
+}
+
 :root {
   --primary-color: #f92524;
   --primary-color-dark: #e91a1a;
@@ -8,6 +12,10 @@
   --text-light: #64748b;
   --white: #ffffff;
   --max-width: 1200px;
+}
+
+#diuli1 {
+  object-position: center;
 }
 
 * {
@@ -20,6 +28,14 @@
   max-width: var(--max-width);
   margin: auto;
   padding: 5rem 1rem;
+}
+
+.header {
+  background-color: #edecf2 !important;
+}
+
+.footer {
+  background-color: #edecf2 !important;
 }
 
 .section__header {
@@ -294,6 +310,7 @@ nav {
   margin-top: 4rem;
   display: grid;
   align-items: center;
+  gap: 20px 0px;
 }
 
 .trainer__card {
@@ -307,6 +324,7 @@ nav {
   object-fit: cover;
   object-position: top;
   height: 389px;
+  border-radius: 8px;
 }
 
 .trainer__content {
@@ -639,6 +657,9 @@ nav {
     background-color: var(--secondary-color);
   }
 
+  .trainer__grid {
+    gap: 20px 0px;
+  }
   .footer__col {
     display: flex;
     flex-direction: column;
