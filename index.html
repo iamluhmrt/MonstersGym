@@ -7,7 +7,10 @@
   <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="save.css">
+  <link rel="stylesheet" href="over.css">
   <link rel="icon" href="assets/Monsters.ico" type="image/x-icon">
+  
   <title>Monsters Gym</title>
   <meta name="author" content="Monsters Gym">
   <meta name="robots" content="index, follow">
@@ -46,30 +49,35 @@
         </li>
       </ul>
     </nav>
-    <div class="section__container header__container" id="home">
-      <div class="header__image">
-        <img src="assets/personal1.png" alt="header" />
-      </div>
-      <div class="header__content">
-        <h4>Sua melhor versão &</h4>
-        <h1 class="section__header">Shape dos Sonhos!</h1>
-        <p>
-          Descubra o seu <strong>verdadeiro potencial</strong> e comece agora a jornada rumo à sua <strong>melhor versão</strong>. <strong>Na Monsters Gym</strong>, ajudamos você a alcançar o <strong>Shape dos Sonhos</strong> com treinos de qualidade, suporte completo e dedicação. Experimente a <strong>única academia de Curitiba</strong> que oferece <strong>1 semana de teste grátis</strong> e surpreenda-se com o que você é capaz de conquistar. Inscreva-se hoje mesmo!
-        </p>
-        <div class="header__btn">
-          <button class="btn" onclick="window.open('https://wa.me/554188654332?text=Oi,%20vi%20o%20site%20da%20academia%20e%20estou%20interessado(a),%20qual%20seria%20o%20valor%20da%20m%C3%A1tricula%20e%20quais%20s%C3%A3o%20os%20planos%20dispon%C3%ADveis%3F', '_blank')">WhatsApp</button>
+
+  </header>
+
+  <div class="menu__container" id="home">
+      <div class="menu_center">
+        <div class="header__content">
+          <h4>Sua melhor versão &</h4>
+          <h1 class="section__header">Shape dos Sonhos!</h1>
+          <p>
+            Descubra o seu <strong>verdadeiro potencial</strong> e comece agora a jornada rumo à sua <strong>melhor versão</strong>. <strong>Na Monsters Gym</strong>, ajudamos você a alcançar o <strong>Shape dos Sonhos</strong> com treinos de qualidade, suporte completo e dedicação. Experimente a <strong>única academia de Curitiba</strong> que oferece <strong>1 semana de teste grátis</strong> e surpreenda-se com o que você é capaz de conquistar. Inscreva-se hoje mesmo!
+          </p>
+          <div class="header__btn">
+            <button class="btn" onclick="window.open('https://wa.me/554188654332?text=Oi,%20vi%20o%20site%20da%20academia%20e%20estou%20interessado(a),%20qual%20seria%20o%20valor%20da%20m%C3%A1tricula%20e%20quais%20s%C3%A3o%20os%20planos%20dispon%C3%ADveis%3F', '_blank')">WhatsApp</button>
+          </div>
+        </div>
+        <div class="header__image">
+          <img src="assets/personal1.png" alt="header" />
         </div>
       </div>
     </div>
-  </header>
 
-  <section class="section__container about__container" id="about">
-    <div class="about__image">
+  <section class="historia_container about__container" id="about">
+    <div class="about__image"> 
       <img class="about__bg" src="assets/dot-bg.png" alt="bg" />
       <div class="container-width">
         <img src="assets/cbum.png" alt="about" />
       </div>
     </div>
+
     <div class="about__content">
       <h2 class="section__header">Nossa História</h2>
       <p class="section__description">
@@ -107,21 +115,30 @@
     </div>
   </section>
 
-  <section class="section__container class__container" id="class">
-    <h2 class="section__header">Nossas Modalidades</h2>
-    <p class="section__description">
-      Nossas Modalidades
-      Na Monsters Gym, oferecemos treinos exclusivos e focados para quem busca força, resistência e evolução. Seja você iniciante ou experiente, nossas modalidades foram pensadas para atender a diferentes objetivos, sempre com o suporte ideal para alcançar o seu melhor desempenho. Escolha a sua e venha treinar com a gente!
-    </p>
+  <section class="modalidades_container" id="class">
+    <div class="text_modalidades">
+      <h2 class="section__header">Nossas Modalidades</h2>
+      <p class="section__description">
+        Nossas Modalidades
+        Na Monsters Gym, oferecemos treinos exclusivos e focados para quem busca força, resistência e evolução. Seja você iniciante ou experiente, nossas modalidades foram pensadas para atender a diferentes objetivos, sempre com o suporte ideal para alcançar o seu melhor desempenho. Escolha a sua e venha treinar com a gente!
+      </p>
+    </div>
+
     <div class="class__grid">
       <div class="class__card">
-        <img src="assets/dot-bg.png" alt="bg" class="class__bg" />
-        <img src="assets/class-1.jpg" alt="class" />
-        <div class="class__content">
-          <h4>Treinamento de Força</h4>
-          <p>Resistência física.</p>
-        </div>
-      </div>
+  <img src="assets/dot-bg.png" alt="bg" class="class__bg" />
+  <img src="assets/class-1.jpg" alt="class" />
+
+  <div class="class__icon">
+    <i class="fa-solid fa-dumbbell"></i>
+  </div>
+
+  <div class="class__content">
+    <h4>Treinamento de Força</h4>
+    <p>Resistência física.</p>
+  </div>
+</div>
+
       <div class="class__card">
         <img src="assets/dot-bg.png" alt="bg" class="class__bg" />
         <img src="assets/flexibilidade.jpg" alt="class" />
@@ -149,15 +166,17 @@
     </div>
   </section>
 
-  <section class="section__container trainer__container" id="trainer">
-    <h2 class="section__header">Nossos Personais</h2>
-    <p class="section__description">
-      Mais do que especialistas em exercícios, nossos treinadores são apaixonados por ajudar você a atingir seus objetivos de saúde e fitness. Com dedicação e experiência, eles criam treinos personalizados que atendem às suas necessidades e potencializam seus resultados.
-    </p>
+  <section class="personal_container" id="trainer">
+    <div class="personal_text">
+      <h2>Nossos Personais</h2>
+      <p class="section__description">
+        Mais do que especialistas em exercícios, nossos treinadores são apaixonados por ajudar você a atingir seus objetivos de saúde e fitness. Com dedicação e experiência, eles criam treinos personalizados que atendem às suas necessidades e potencializam seus resultados.
+      </p>
+    </div>
     <div class="trainer__grid">
-      <div class="trainer__card">
+      <!-- <div class="trainer__card">
         <img src="assets/carlos_aberto1.png" alt="trainer" />
-      </div>
+      </div> -->
       <div class="trainer__card">
         <div class="trainer__content">
           <h4>Carlos Alberto</h4>
@@ -168,51 +187,34 @@
           </p>
           <div class="trainer__socials">
             <a href="https://www.instagram.com/monstersgym/following/?hl=en" target="_blank"><i class="ri-instagram-line"></i></a>
-
           </div>
         </div>
       </div>
-      <div class="trainer__card">
+      <div class="trainer__card2">
+        <span class="experience-badge">+30 Anos de Experiência</span>
         <img src="assets/carlos_aberto2.png" alt="trainer" />
       </div>
-      <!-- <div class="trainer__card">
-        <img src="assets/diuli1.jpeg" alt="trainer" id="diuli1" />
-      </div>
-      <div class="trainer__card">
-        <div class="trainer__content">
-          <h4>Diuli Oliveira</h4>
-          <h5>Atleta, Treinadora e Nutri Esportiva!</h5>
-          <hr />
-          <p>
-            Especialista em modelagem física feminina e experiência em treino para gestantes e idosos. Seu foco é trazer autoestima e qualidade de vida para seus alunos.
-          </p>
-          <div class="trainer__socials">
-            <a href="https://www.instagram.com/personal_diulidark/?hl=en" target="_blank"><i class="ri-instagram-line"></i></a>
 
-          </div>
-        </div>
-      </div>
-      <div class="trainer__card">
-        <img src="assets/diuli2.jpeg" alt="trainer" />
-      </div> -->
+      
     </div>
   </section>
 
-  <section class="section__container price__container" id="price">
+  <!-- <section class="planos__container price__container" id="price">
     <h2 class="section__header">Nosso planos</h2>
     <p class="section__description">
       Oferecemos planos flexíveis que se ajustam às suas necessidades e objetivos de fitness.
     </p>
     <div class="price__grid">
-      <div class="price__card">
+      <div class="principal_card--premium">
         <div class="price__content">
-          <h4>Mensal Livre</h4>
-          <img src="assets/price-1.png" alt="price" />
+          <h4>Anual Família</h4>
+          <img src="assets/price-3.png" alt="price" />
           <p>
             Dinheiro ou Cartão
           </p>
           <hr />
           <h4>Principais Benefícios</h4>
+          <p><strong>Desconto Família:</strong> Inscreva um familiar e ganhe um <strong>desconto exclusivo</strong> no plano anual, aproveitando ainda mais os benefícios de treinar em grupo, com toda a família cuidando da saúde e bem-estar juntos.</p>
           <p><strong>Treinamento personalizado:</strong> Com acompanhamento de um personal trainer, você terá um plano de treino ajustado às suas necessidades e objetivos, garantindo resultados rápidos e eficientes.</p>
           <p><strong>Acesso completo às máquinas:</strong> Todos os membros têm acesso livre a toda a nossa infraestrutura, com equipamentos modernos e de alta qualidade para otimizar seu treino.</p>
           <p><strong>Horário livre para treinar:</strong> Flexibilidade total! Você pode treinar no horário que melhor se adapta à sua rotina, sem restrições de tempo.</p>
@@ -234,16 +236,16 @@
         </div>
         <button class="btn" onclick="window.open('https://wa.me/554188654332?text=Oi,%20vi%20o%20site%20da%20academia%20e%20estou%20interessado(a),%20qual%20seria%20o%20valor%20da%20m%C3%A1tricula%20e%20quais%20s%C3%A3o%20os%20planos%20dispon%C3%ADveis%3F', '_blank')">Assinar Plano</button>
       </div>
+      
       <div class="price__card">
         <div class="price__content">
-          <h4>Anual Família</h4>
-          <img src="assets/price-3.png" alt="price" />
+          <h4>Mensal Livre</h4>
+          <img src="assets/price-1.png" alt="price" />
           <p>
             Dinheiro ou Cartão
           </p>
           <hr />
           <h4>Principais Benefícios</h4>
-          <p><strong>Desconto Família:</strong> Inscreva um familiar e ganhe um <strong>desconto exclusivo</strong> no plano anual, aproveitando ainda mais os benefícios de treinar em grupo, com toda a família cuidando da saúde e bem-estar juntos.</p>
           <p><strong>Treinamento personalizado:</strong> Com acompanhamento de um personal trainer, você terá um plano de treino ajustado às suas necessidades e objetivos, garantindo resultados rápidos e eficientes.</p>
           <p><strong>Acesso completo às máquinas:</strong> Todos os membros têm acesso livre a toda a nossa infraestrutura, com equipamentos modernos e de alta qualidade para otimizar seu treino.</p>
           <p><strong>Horário livre para treinar:</strong> Flexibilidade total! Você pode treinar no horário que melhor se adapta à sua rotina, sem restrições de tempo.</p>
@@ -251,13 +253,88 @@
         <button class="btn" onclick="window.open('https://wa.me/554188654332?text=Oi,%20vi%20o%20site%20da%20academia%20e%20estou%20interessado(a),%20qual%20seria%20o%20valor%20da%20m%C3%A1tricula%20e%20quais%20s%C3%A3o%20os%20planos%20dispon%C3%ADveis%3F', '_blank')">Assinar Plano</button>
       </div>
     </div>
-  </section>
+  </section> -->
 
-  <section class="section__container client__container" id="client">
-    <h2 class="section__header">O Que Dizem Sobre Nós?</h2>
-    <p class="section__description">
-      As histórias dos nossos alunos refletem o impacto da Monsters Gym na transformação de vidas. <br>Cada depoimento é uma prova do nosso compromisso em oferecer suporte, motivação e resultados reais, sempre em um ambiente acolhedor e inspirador. Aqui, sua jornada é nossa prioridade!
-    </p>
+
+  <section class="planos__container price__container" id="price">
+  <h2 class="section__header">Nossos Planos</h2>
+  <p class="section__description">
+    Oferecemos planos flexíveis que se ajustam às suas necessidades e objetivos de fitness.
+  </p>
+
+  <div class="price__grid">
+
+    <!-- Mensal Livre -->
+    <div class="price__card">
+      <div class="price__content">
+        <h4>Mensal Livre</h4>
+        <p class="payment">Dinheiro ou Cartão</p>
+        <hr />
+        <h5>Principais Benefícios</h5>
+
+        <ul class="benefits">
+          <li>Treinamento personalizado com acompanhamento de personal trainer</li>
+          <li>Acesso completo às máquinas e equipamentos modernos</li>
+          <li>Horário livre para treinar sem restrições</li>
+        </ul>
+      </div>
+
+      <button class="btn">Assinar Plano</button>
+    </div>
+
+    <!-- Anual -->
+    <div class="price__card">
+      <div class="price__content">
+        <h4>Anual</h4>
+        <p class="payment">Dinheiro ou Cartão</p>
+        <hr />
+        <h5>Principais Benefícios</h5>
+
+        <ul class="benefits">
+          <li>Treinamento personalizado com acompanhamento de personal trainer</li>
+          <li>Acesso completo às máquinas e equipamentos modernos</li>
+          <li>Horário livre para treinar sem restrições</li>
+        </ul>
+      </div>
+
+      <button class="btn">Assinar Plano</button>
+    </div>
+
+    <!-- Anual Família (Destaque) -->
+    <div class="principal_card--premium">
+      <span class="badge">👑 MAIS POPULAR</span>
+
+      <div class="price__content">
+        <h4>Anual Família</h4>
+        <p class="payment">Dinheiro ou Cartão</p>
+        <hr />
+        <h5>Principais Benefícios</h5>
+
+        <ul class="benefits">
+          <li>Desconto família exclusivo ao inscrever um familiar</li>
+          <li>Treinamento personalizado com personal trainer</li>
+          <li>Acesso completo às máquinas e equipamentos modernos</li>
+          <li>Horário livre para treinar sem restrições</li>
+        </ul>
+      </div>
+
+      <button class="btn btn--white">Assinar Plano</button>
+    </div>
+
+  </div>
+</section>
+
+
+
+
+
+  <section class="section__container_client client__container" id="client">
+    <div class="text_avaliation">
+        <h2 class="section__header">O Que Dizem Sobre Nós?</h2>
+      <p class="section__description">
+        As histórias dos nossos alunos refletem o impacto da Monsters Gym na transformação de vidas. <br>Cada depoimento é uma prova do nosso compromisso em oferecer suporte, motivação e resultados reais, sempre em um ambiente acolhedor e inspirador. Aqui, sua jornada é nossa prioridade!
+      </p>
+    </div>
     <!-- Slider main container -->
     <div class="swiper">
       <!-- Additional required wrapper -->
